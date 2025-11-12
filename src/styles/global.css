@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+* {
+    @apply no-underline text-[white] m-0 p-0;
+    font-family: "Montserrat";
+}
+
+html,
+body {
+    @apply min-h-full;
+}
+
+body {
+    @apply bg-no-repeat;
+    background: radial-gradient(at top left,
+            rgba(146, 43, 225, 1) 0%,
+            rgba(43, 9, 107, 1) 100%);
+}
+
+p {
+    @apply leading-[1.5em] mx-auto my-4;
+}
+
+/* layout & nav */
+.layout {
+    @apply max-w-[1200px] mx-auto my-0;
+}
+
+nav {
+    @apply grid grid-cols-[1fr_1fr] mx-auto my-10;
+}
+
+nav .links {
+    @apply inline-block text-right;
+}
+
+nav a {
+    @apply inline-block font-normal ml-5 pb-2 border-b-[3px] border-b-transparent border-solid hover:border-[white];
+}
+
+footer p {
+    @apply text-center text-[#bbb] mx-auto my-10;
+}
+
+.header {
+    @apply grid grid-cols-[1fr_1fr] gap-10 items-center;
+}
+
+.header h2 {
+    @apply text-[4em];
+}
+
+.header h3 {
+    @apply text-[3em] font-normal mb-5;
+}
+
+.btn {
+    @apply inline-block font-medium mt-5 px-4 py-2.5 rounded-[10px];
+    background: #d42990;
+}
+
+.portfolio {
+    @apply text-center;
+}
+
+.portfolio>h2 {
+    @apply text-[3em] mt-20;
+}
+
+.portfolio>h3 {
+    @apply text-[2em] font-normal;
+}

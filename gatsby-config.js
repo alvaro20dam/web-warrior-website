@@ -8,5 +8,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
-}
+  plugins: [`gatsby-plugin-postcss`],
+  siteMetadata: {
+    title: "a_data_trip",
+    description: "web dev portfolio",
+    copyright: "This website is copyright 2025 a_data_trip",
+  },
+};
