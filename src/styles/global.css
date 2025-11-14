@@ -48,6 +48,9 @@ footer p {
     @apply grid grid-cols-[1fr_1fr] gap-10 items-center;
 }
 
+.header h1 {
+    @apply text-[5em];
+}
 .header h2 {
     @apply text-[4em];
 }
@@ -71,4 +74,38 @@ footer p {
 
 .portfolio>h3 {
     @apply text-[2em] font-normal;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    margin: 80px 20px;
+}
+
+.projects h3 {
+    text-align: center;
+    margin: 20px auto 0px;
+    font-weight: 500;
+}
+
+.projects p {
+    color: #ccc;
+    margin-top: 4px;
+}
+
+.details h2 {
+    @apply text-[3.5em] mt-20;
+}
+
+.details h3 {
+    @apply text-[2em] font-normal mb-10;
+}
+
+.html {
+    @apply mt-10;
+}
+
+.featured {
+    @apply mb-10;
 }
